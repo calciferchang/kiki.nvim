@@ -19,7 +19,10 @@
 vim.b.minicompletion_disable = true
 
 -- Enable spelling and wrap for window
-vim.cmd('setlocal spell wrap')
+-- Set soft wrap at 78 characters (3 alphabets) with word boundaries
+vim.cmd('setlocal spell wrap linebreak breakindent')
+vim.bo.textwidth = 78
+vim.wo.colorcolumn = '79'  -- Visual guide at one character past limit
 
 -- Fold with tree-sitter
 vim.cmd('setlocal foldmethod=expr foldexpr=v:lua.vim.treesitter.foldexpr()')
