@@ -15,6 +15,9 @@
 -- This is also a good place to set buffer-local 'mini.nvim' variables.
 -- See `:h mini.nvim-buffer-local-config` and `:h mini.nvim-disabling-recipes`.
 
+-- Disable autocompletion for prose writing
+vim.b.minicompletion_disable = true
+
 -- Enable spelling and wrap for window
 vim.cmd('setlocal spell wrap')
 
