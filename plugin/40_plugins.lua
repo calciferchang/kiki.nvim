@@ -126,3 +126,8 @@ later(function()
   require("gitui").setup()
 end)
 
+-- Color schemes ==============================================================
+
+add({ source = "catppuccin/nvim", name = "catppuccin" })
+vim.cmd.colorscheme "catppuccin"
+

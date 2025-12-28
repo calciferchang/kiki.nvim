@@ -28,13 +28,6 @@ local now, later = MiniDeps.now, MiniDeps.later
 local now_if_args = _G.Config.now_if_args
 
 -- Step one ===================================================================
--- Enable 'miniwinter' color scheme. It comes with 'mini.nvim' and uses 'mini.hues'.
---
--- See also:
--- - `:h mini.nvim-color-schemes` - list of other color schemes
--- - `:h MiniHues-examples` - how to define highlighting with 'mini.hues'
--- - 'plugin/40_plugins.lua' honorable mentions - other good color schemes
-now(function() vim.cmd('colorscheme miniwinter') end)
 
 -- Common configuration presets. Example usage:
 -- - `<C-s>` in Insert mode - save and go to Normal mode
